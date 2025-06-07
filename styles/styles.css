@@ -1,0 +1,77 @@
+
+/*    CSS Variables    */
+
+:root {
+    --color-header-bg: #596441;
+    --color-header-h1: #1f2410;
+    --color-bg: #f1e5cd;
+    --color-footer-bg: #a0703e;
+    --color-body-p: #2e2b1f;
+    --color-accent-light: #f1e5cd;
+    --color-links: #5a6e3f;
+    --color-links-hover: #849d6e;
+
+    --font-body: 'Lora', serif;
+    --font-header-h1: 'Metamorphous', cursive;
+    --font-header-p: 'Petit Formal Script', cursive;
+}
+
+
+/*   Global styles   */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--color-header-bg);
+}
+
+header h1 {
+    color: var(--color-header-h1);
+    font-family: var(--font-header-h1);
+}
+
+header p {
+    font-family: var(--font-header-p);
+    color: var(--color-accent-light);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-links);
+    font-weight: bold;
+}
+
+footer a {
+    color: var(--color-body-p);
+}
+
+footer a:visited {
+    color: var(--color-body-p);
+}
+
+a:visited {
+    color: var(--color-links);
+}
+
+a:hover {
+    color: var(--color-links-hover);
+}
+
+footer a:hover {
+    color: var(--color-accent-light);
+}
+
+body {
+    background-color: var(--color-bg);
+    font-family: var(--font-body);
+    color: var(--color-body-p);
+}
+
+footer {
+    background-color: var(--color-footer-bg);
+    color: var(--color-accent-light);
+}
